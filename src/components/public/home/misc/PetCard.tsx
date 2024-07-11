@@ -3,7 +3,7 @@ import defaultImg from "../../../../assets/images/defaultImg.jpg";
 function PetCard() {
   return (
     <a className="flex flex-col cursor-pointer border-2 border-transparent rounded-xl drop-shadow-lg hover:border-violet-700 group">
-      <picture className="w-52 h-52">
+      <picture className="w-full h-full">
         <img
           src={defaultImg}
           alt={"Pet do not have image"}

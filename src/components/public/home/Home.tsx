@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import { updateFilter } from "../../../global/states/filter";
 import FilterButton from "./misc/FilterButton";
 import PetCard from "./misc/PetCard";
-import Next_icon from "../../../assets/icons/next.icon";
+import FilterIcon from "../../../assets/icons/Filter.icon";
 
 function Home() {
   const filterState = useSelector((store: AppStore) => store.filter);
@@ -65,15 +65,20 @@ function Home() {
         </div>
       </div>
 
-      <div className="mt-16 p-8 grid grid-cols-6">
-        <div>filtes</div>
+      <div className="mt-16 pt-8 mx-[4%]">
+        <div className=" flex flex-col gap-4">
+          <div className="flex justify-between items-center text-violet-600">
+            <a className="text-2xl font-extrabold pl-4">
+              Pets Available for Adoption
+            </a>
 
-        <div className=" flex flex-col gap-4 col-span-5">
-          <a className="text-2xl font-extrabold text-violet-600 pl-20 text-center">
-            Pets Available for Adoption
-          </a>
+            <button className="group flex bg-violet-600 rounded-full text-white items-center  hover:pr-2 transition-all duration-200 cursor-pointer drop-shadow-md">
+              <FilterIcon />
+              <h1 className="hidden group-hover:block font-bold"> Filters </h1>
+            </button>
+          </div>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="grid grid-cols-5 gap-4">
             <PetCard />
             <PetCard />
             <PetCard />
