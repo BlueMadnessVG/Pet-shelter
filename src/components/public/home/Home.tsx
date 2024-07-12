@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import { updateFilter } from "../../../global/states/filter";
 import FilterButton from "./misc/FilterButton";
 import PetCard from "./misc/PetCard";
-import FilterIcon from "../../../assets/icons/Filter.icon";
+import FilterTableButton from "./misc/FilterTable.button";
 
 function Home() {
   const filterState = useSelector((store: AppStore) => store.filter);
@@ -24,7 +24,7 @@ function Home() {
   };
 
   return (
-    <div className="flex-1 flex-col overflow-y-auto bg-vio bg-zinc-100/60">
+    <div className="flex-1 flex-col overflow-y-auto bg-vio bg-zinc-100/60 relative">
       <div className="relative flex flex-col items-center h-[44%] justify-end border-b-8 border-violet-700">
         <picture className="absolute w-full h-full ">
           <img src={catBackground} className="w-full h-full object-cover" />
@@ -66,16 +66,13 @@ function Home() {
       </div>
 
       <div className="mt-16 pt-8 mx-[4%]">
-        <div className=" flex flex-col gap-4">
+        <div className="relative flex flex-col gap-4">
           <div className="flex justify-between items-center text-violet-600">
             <a className="text-2xl font-extrabold pl-4">
               Pets Available for Adoption
             </a>
 
-            <button className="group flex bg-violet-600 rounded-full text-white items-center  hover:pr-2 transition-all duration-200 cursor-pointer drop-shadow-md">
-              <FilterIcon />
-              <h1 className="hidden group-hover:block font-bold"> Filters </h1>
-            </button>
+            <FilterTableButton />
           </div>
 
           <div className="grid grid-cols-5 gap-4">
