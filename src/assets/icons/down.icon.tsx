@@ -1,4 +1,4 @@
-function Next_icon() {
+function Down_icon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +13,4 @@ function Next_icon() {
     </svg>
   );
 }
-export default Next_icon;
+export default Down_icon;

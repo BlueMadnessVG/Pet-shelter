@@ -10,6 +10,7 @@ import { updateFilter } from "../../../global/states/filter";
 import FilterButton from "./misc/FilterButton";
 import PetCard from "./misc/PetCard";
 import FilterTableButton from "./misc/FilterTable.button";
+import HomeTable from "./misc/home.table";
 
 function Home() {
   const filterState = useSelector((store: AppStore) => store.filter);
@@ -75,18 +76,7 @@ function Home() {
             <FilterTableButton />
           </div>
 
-          <div className="grid grid-cols-5 gap-4">
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-            <PetCard />
-          </div>
+          <HomeTable />
         </div>
       </div>
     </div>

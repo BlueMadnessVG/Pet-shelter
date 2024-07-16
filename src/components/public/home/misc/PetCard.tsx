@@ -1,8 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import defaultImg from "../../../../assets/images/defaultImg.jpg";
 
 function PetCard() {
+  const navigate = useNavigate();
+
   return (
-    <a className="flex flex-col cursor-pointer border-2 border-transparent rounded-xl drop-shadow-lg hover:border-violet-700 group">
+    <a
+      className="flex flex-col cursor-pointer border-2 border-transparent rounded-xl drop-shadow-lg hover:border-violet-700 group"
+      onClick={() => navigate(`/Pet/1`)}
+    >
       <picture className="w-full h-full">
         <img
           src={defaultImg}

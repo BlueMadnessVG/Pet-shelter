@@ -6,6 +6,7 @@ import RouteWithNotFound from "../utils/RouteWithNotFound.utility";
 import { Provider } from "react-redux";
 import store from "../global/store";
 import Navbar from "../components/public/navbar/Navbar";
+import PetInfo from "../components/public/pet/PetInfo";
 
 const Private = lazy(() => import("../components/private/Private"));
 const Home = lazy(() => import("../components/public/home/Home"));
@@ -22,6 +23,7 @@ export const AppRouter = () => {
           <Route path={PublicRoutes.LOGIN} element={<Session />} />
           <Route path={PublicRoutes.SINGUP} element={<Session />} />
           <Route path={PublicRoutes.HOME} element={<Home />} />
+          <Route path={`/${PublicRoutes.PET}/:id`} element={<PetInfo />} />
           <Route element={<AuthGuard />}>
             <Route path={`${PrivateRoutes.PRIVATE}/*`} element={<Private />} />
           </Route>
