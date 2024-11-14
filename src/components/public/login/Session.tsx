@@ -5,7 +5,6 @@ import { createUser } from "../../../global/states/user";
 import { useNavigate, useLocation } from "react-router-dom";
 
 import catBackGround from "../../../assets/images/catBackground.png";
-import catFormBackGround from "../../../assets/images/catFormDisplay.png";
 import LoginForm from "./forms/Login.form";
 import SingUpForm from "./forms/SingUp.form";
 

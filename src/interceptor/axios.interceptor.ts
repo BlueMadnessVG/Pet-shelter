@@ -16,7 +16,7 @@ export const AxiosInterceptor = () => {
     return request;
   };
 
-  apiRoute.interceptors.request.use((request) => {
+  apiRoute.interceptors.request.use((request: any) => {
     console.log("Starting Request", request);
     return updateHeader(request);
   });
