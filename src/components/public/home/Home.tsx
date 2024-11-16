@@ -11,6 +11,8 @@ import FilterButton from "./misc/FilterButton";
 import PetCard from "./misc/PetCard";
 import FilterTableButton from "./misc/FilterTable.button";
 import HomeTable from "./misc/home.table";
+import ChangePage from "../../../utils/ChangePage.motion";
+import { motion } from "framer-motion";
 
 function Home() {
   const filterState = useSelector((store: AppStore) => store.filter);
@@ -25,7 +27,7 @@ function Home() {
   };
 
   return (
-    <div className="flex-1 flex-col overflow-y-auto bg-vio bg-zinc-100/60 relative">
+    <motion.div className="flex-1 flex-col overflow-y-auto overflow-x-hidden bg-vio bg-zinc-100/60 relative">
       <div className="relative flex flex-col items-center h-[44%] justify-end border-b-8 border-violet-700">
         <picture className="absolute w-full h-full ">
           <img src={catBackground} className="w-full h-full object-cover" />
@@ -79,7 +81,8 @@ function Home() {
           <HomeTable />
         </div>
       </div>
-    </div>
+      <ChangePage />
+    </motion.div>
   );
 }
 export default Home;

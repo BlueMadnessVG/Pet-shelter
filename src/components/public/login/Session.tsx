@@ -7,6 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import catBackGround from "../../../assets/images/catBackground.png";
 import LoginForm from "./forms/Login.form";
 import SingUpForm from "./forms/SingUp.form";
+import ChangePage from "../../../utils/ChangePage.motion";
 
 function Session() {
   const location = useLocation();
@@ -38,6 +39,7 @@ function Session() {
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </picture>
+      <ChangePage />
     </div>
   );
 }
