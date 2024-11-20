@@ -81,7 +81,6 @@ function Home() {
           <HomeTable />
         </div>
       </div>
-      <ChangePage />
     </motion.div>
   );
 }

@@ -20,15 +20,6 @@ function HomeTable() {
     <div>
       <div className="grid grid-cols-5 gap-4">
         <PetCard />
-        <PetCard />
-        <PetCard />
-        <PetCard />
-        <PetCard />
-        <PetCard />
-        <PetCard />
-        <PetCard />
-        <PetCard />
-        <PetCard />
       </div>
 
       <div className="flex flex-row justify-end my-8 gap-6 text-violet-600 ">
