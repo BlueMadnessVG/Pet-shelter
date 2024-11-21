@@ -2,7 +2,7 @@ import CatIcon from "../../../assets/icons/cat.icon";
 import DogIcon from "../../../assets/icons/dog.icon";
 import InfoIcon from "../../../assets/icons/info.icon";
 import OthersIcon from "../../../assets/icons/others.icon";
-import catBackground from "../../../assets/images/homeBackground.jpg";
+import catBackground from "../../../assets/images/catBackground.png";
 import { useDispatch, useSelector } from "react-redux";
 import { AppStore } from "../../../global/store";
 import { useEffect } from "react";
@@ -27,7 +27,50 @@ function Home() {
   };
 
   return (
-    <motion.div className="flex-1 flex-col overflow-y-auto overflow-x-hidden bg-vio bg-zinc-100/60 relative">
+    <motion.main className="flex-1 flex-col overflow-y-auto overflow-x-hidden bg-vio bg-zinc-100/60 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 h-full relative">
+        <motion.div
+          className="absolute w-[200vw] h-[200vw] -z-10 bg-gradient-to-r from-[#52dab6] to-[#75dbc0] top-[-120vh] left-[50vw] rounded-[40%] mix-blend-multiply"
+          initial={{ rotate: 10 }}
+          animate={{
+            rotate: 360,
+            transition: {
+              ease: "linear",
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          }}
+        />
+        <motion.div
+          className="absolute w-[200vw] h-[200vw] -z-10 bg-gradient-to-r from-[#52dab6] to-[#75dbc0] top-[-120vh] left-[50vw] rounded-[40%] rotate-[30deg] mix-blend-multiply"
+          initial={{ rotate: 40 }}
+          animate={{
+            rotate: 380,
+            transition: {
+              ease: "linear",
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          }}
+        />
+        <motion.div
+          className="absolute w-[200vw] h-[200vw] -z-10 bg-gradient-to-r from-[#52dab6] to-[#75dbc0] top-[-120vh] left-[50vw] rounded-[40%] rotate-[30deg] mix-blend-multiply"
+          initial={{ rotate: 80 }}
+          animate={{
+            rotate: 420,
+            transition: {
+              ease: "linear",
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          }}
+        />
+
+        <div>asldkhjasdklja</div>
+      </div>
       <div className="relative flex flex-col items-center h-[44%] justify-end border-b-8 border-violet-700">
         <picture className="absolute w-full h-full ">
           <img src={catBackground} className="w-full h-full object-cover" />
@@ -67,21 +110,7 @@ function Home() {
           />
         </div>
       </div>
-
-      <div className="mt-16 pt-8 mx-[4%]">
-        <div className="relative flex flex-col gap-4">
-          <div className="flex justify-between items-center text-violet-600">
-            <a className="text-2xl font-extrabold pl-4">
-              Pets Available for Adoption
-            </a>
-
-            <FilterTableButton />
-          </div>
-
-          <HomeTable />
-        </div>
-      </div>
-    </motion.div>
+    </motion.main>
   );
 }
 export default Home;

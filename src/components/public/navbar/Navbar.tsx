@@ -11,7 +11,7 @@ function Navbar() {
         {/* LOGO REGION */}
         <a
           className="flex flex-row items-end gap-4 cursor-pointer"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/Home")}
         >
           <picture className="aspect-square flex-none w-12 h-12 ">
             <img

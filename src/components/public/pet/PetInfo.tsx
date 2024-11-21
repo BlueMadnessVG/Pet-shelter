@@ -5,7 +5,7 @@ import defaultImg from "../../../assets/images/defaultImg.jpg";
 function PetInfo() {
   return (
     <div className="flex">
-      <motion.picture className="w-20 h-56" layoutId="pet-image">
+      <motion.picture className="w-56 h-56" layoutId="pet-image">
         <img
           src={defaultImg}
           alt={"Pet do not have image"}
