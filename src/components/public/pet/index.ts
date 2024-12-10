@@ -1,1 +1,1 @@
-export * from "./PetInfo";
+export * from "../../../pages/public/PetInfo";

@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { useSelector } from "react-redux";
-import { AppStore } from "../../../../global/store";
+import { AppStore } from "../../../global/store";
 
 const baseButtonStyle = `flex flex-col bg-white py-2 px-6 gap-1 rounded-lg drop-shadow-lg items-center hover:scale-110 border-2 hover:border-violet-700 transform-all duration-150`;
 

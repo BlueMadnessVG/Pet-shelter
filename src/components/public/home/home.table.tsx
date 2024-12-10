@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
-import Left_icon from "../../../../assets/icons/left.icon";
-import Right_icon from "../../../../assets/icons/right.icon";
-import PetCard from "./PetCard";
-import { AppStore } from "../../../../global/store";
-import { updateTable } from "../../../../global/states/table";
+import Left_icon from "../../../assets/icons/left.icon";
+import Right_icon from "../../../assets/icons/right.icon";
+import PetCard from "../pet/PetCard";
+import { AppStore } from "../../../global/store";
+import { updateTable } from "../../../global/states/table";
 
 let buttonCSS =
   "bg-white p-2 gap-2 rounded-md shadow-[0_1px_3px_rgba(77,71,81,.2)] w-[14%] flex justify-center text-center items-center hover:bg-violet-600 hover:text-white transition-all duration-150";

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import defaultImg from "../../../assets/images/defaultImg.jpg";
+import defaultImg from "../../assets/images/defaultImg.jpg";
 
 function PetInfo() {
   return (

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import defaultImg from "../../../../assets/images/defaultImg.jpg";
-import mexic_flag from "../../../../assets/icons/mexico_flag.svg";
-import cat_icon from "../../../../assets/icons/cat.svg";
+import defaultImg from "../../../assets/images/defaultImg.jpg";
+import mexic_flag from "../../../assets/icons/mexico_flag.svg";
+import cat_icon from "../../../assets/icons/cat.svg";
 import { motion, useSpring, useTransform } from "framer-motion";
 import { MouseEventHandler } from "react";
 

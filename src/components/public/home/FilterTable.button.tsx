@@ -1,4 +1,4 @@
-import FilterIcon from "../../../../assets/icons/Filter.icon";
+import FilterIcon from "../../../assets/icons/Filter.icon";
 import FilterSelect from "./filter.select";
 
 function FilterTableButton() {

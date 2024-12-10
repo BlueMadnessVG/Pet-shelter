@@ -6,11 +6,11 @@ import RouteWithNotFound from "../utils/RouteWithNotFound.utility";
 import { Provider } from "react-redux";
 import store from "../global/store";
 import Navbar from "../components/public/navbar/Navbar";
-import PetInfo from "../components/public/pet/PetInfo";
+import PetInfo from "../pages/public/PetInfo";
 import { AnimatePresence } from "framer-motion";
 
 const Private = lazy(() => import("../components/private/Private"));
-const Home = lazy(() => import("../components/public/home/Home"));
+const Home = lazy(() => import("../pages/public/Home"));
 const Session = lazy(() => import("../components/public/login/Session"));
 
 export const AppRouter = () => {

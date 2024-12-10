@@ -1,4 +1,4 @@
-import Down_icon from "../../../../assets/icons/down.icon";
+import Down_icon from "../../../assets/icons/down.icon";
 
 function FilterSelect({
   name,
