@@ -1,5 +1,10 @@
+import { loadAbort } from "../utils/Controllers/loadAbort.axios";
 import apiRoute from "./api.config";
 
 export const getPets = () => {
-  return apiRoute.get("pets");
+  const controller = loadAbort();
+  return {
+    call: apiRoute.get("pets", { signal: controller.signal }),
+    controller,
+  };
 };
