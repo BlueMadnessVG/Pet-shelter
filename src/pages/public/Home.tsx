@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import HeroSection from "../../components/public/home/Hero.section";
 
 function Home() {
-  const filterState = useSelector((store: AppStore) => store.filter);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -15,7 +14,7 @@ function Home() {
   }, []);
 
   return (
-    <motion.main className="flex-1 flex-col overflow-y-auto overflow-x-hidden bg-vio bg-zinc-100/60 relative">
+    <motion.main className="flex-1 flex-col overflow-y-auto overflow-x-hidden bg-vio bg-black/40 relative">
       <HeroSection />
 
       <div className="relative flex flex-col items-center h-[44%] justify-end border-b-8 border-violet-700">

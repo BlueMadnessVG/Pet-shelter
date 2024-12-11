@@ -42,21 +42,6 @@ function Navbar() {
           </a>
         </div>
       </div>
-
-      <div className="flex justify-center gap-28 bg-violet-700 py-2 text-white drop-shadow-lg">
-        <button className="text-sm font-semibold hover:underline hover:scale-105 transition-all duration-150">
-          ABOUT ADOPTION
-        </button>
-        <button className="text-sm font-semibold hover:underline hover:scale-105 transition-all duration-150">
-          DOGS & PUPPIES
-        </button>
-        <button className="text-sm font-semibold hover:underline hover:scale-105 transition-all duration-150">
-          CATS & KITTENS
-        </button>
-        <button className="text-sm font-semibold hover:underline hover:scale-105 transition-all duration-150">
-          OTHER TYPE OF PETS
-        </button>
-      </div>
     </div>
   );
 }
