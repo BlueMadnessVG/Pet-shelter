@@ -1,4 +1,4 @@
-function DogIcon() {
+function DogIcon({ style }: { style: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +6,7 @@ function DogIcon() {
       viewBox="0 0 100 100"
       x="0px"
       y="0px"
-      className="w-28 h-28 m-2 text-violet-700"
+      className={style}
     >
       <ellipse
         cx="33.77"
